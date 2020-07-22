@@ -22,7 +22,7 @@ const User = db.define('user', {
     }
 });
 
-const product = db.define('products', {
+const Product = db.define('products', {
     id: {
         type:Sequelize.INTEGER,
         autoIncrement: true,
@@ -45,5 +45,5 @@ db.sync()
     .catch((err) => console.error("Error creating database"))
 
 exports =  module.exports = {
-    User, product
+    User, Product
 }
